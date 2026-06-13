@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2">
+    <title>Evaluación 4.2</title>
+    <style>
+        /* Id's de mis CSS */
+        #titulo-principal { color: #2c3e50; text-align: center; }
+        #nombre-alumno { color: #34495e; text-align: center; }
+        #explicacion-caja { background-color: #ecf0f1; padding: 10px; border: 1px solid #bdc3c7; }
+        #matriz-contenedor { display: inline-block; background-color: #ecf0f1; padding: 20px;}
+        
+        /* Estilos para tu matriz X-Y (Expándela a 4x4 en tu HTML) */
+        #celda-activa { background-color: #e74c3c; color: white; padding: 20px; font-weight: bold; border: 2px solid white; display: inline-block;}
+        #celda-inactiva { background-color: #95a5a6; color: white; padding: 20px; border: 2px solid white; display: inline-block;}
+    </style>
+</head>
+<body>
+    <h1 id="titulo-principal">Visualización de Datos X-Y con Flask</h1>
+    <h2 id="nombre-alumno">Marco Antonio Dugarte Salas/h2>
+
+    <div id="explicacion-caja">
+        <p id="texto-exp">Los datos capturados por el giroscopio del celular se actualizan automáticamente. La celda correspondiente a las coordenadas cambia a un color rojo.</p>
+    </div>
+
+    <h3 id="coordenadas">X: {{ ejeX }} | Y: {{ ejeY }}</h3>
+    
+    <div id="matriz-contenedor">
+        <div id="celda-activa">Dato</div>
+    </div>
+</body>
+</html>
