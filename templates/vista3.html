@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2">
+    <title>Evaluación 4.2 - Vista de Indicadores (Vista 3)</title>
+    <style>
+        #menu-navegacion { background-color: #34495e; padding: 15px; text-align: center; }
+        #link-inicio { color: #bdc3c7; margin: 0 15px; text-decoration: none; }
+        #link-v2 { color: #bdc3c7; margin: 0 15px; text-decoration: none; }
+        #link-v3 { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; border-bottom: 2px solid #e74c3c;}
+
+        #titulo-principal { color: #2c3e50; text-align: center; }
+        #explicacion-caja { background-color: #ecf0f1; padding: 10px; border: 1px solid #bdc3c7; text-align: center; margin: 20px; }
+        #barras-contenedor { max-width: 500px; margin: 0 auto; background-color: #ecf0f1; padding: 20px; border: 1px solid #bdc3c7;}
+        #barra-x-fondo { background-color: #bdc3c7; width: 100%; height: 30px; margin-bottom: 20px; }
+        #barra-y-fondo { background-color: #bdc3c7; width: 100%; height: 30px; }
+        #etiqueta-x { font-weight: bold; color: #2980b9; }
+        #etiqueta-y { font-weight: bold; color: #27ae60; }
+    </style>
+</head>
+<body>
+    <nav id="menu-navegacion">
+        <a id="link-inicio" href="/">Vista Principal</a>
+        <a id="link-v2" href="/vista2">Vista Radar</a>
+        <a id="link-v3" href="/vista3">Vista Indicadores</a>
+    </nav>
+
+    <h1 id="titulo-principal">Vista Creativa: Barras de Intensidad</h1>
+
+    <div id="explicacion-caja">
+        <p id="texto-exp">Las barras representan la magnitud de los datos de X e Y obtenidos del sensor.</p>
+    </div>
+
+    <div id="barras-contenedor">
+        <p id="etiqueta-x">Magnitud Eje X ({{ ejeX }})</p>
+        <div id="barra-x-fondo">
+            <div id="barra-x-progreso" style="height: 100%; background-color: #3498db; width: {{ ejeX }}%;"></div>
+        </div>
+
+        <p id="etiqueta-y">Magnitud Eje Y ({{ ejeY }})</p>
+        <div id="barra-y-fondo">
+            <div id="barra-y-progreso" style="height: 100%; background-color: #2ecc71; width: {{ ejeY }}%;"></div>
+        </div>
+    </div>
+</body>
+</html>
