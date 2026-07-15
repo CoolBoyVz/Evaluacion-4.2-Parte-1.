@@ -1,6 +1,6 @@
 # Visualización de Datos X-Y con Flask
 
-### NOMBRE.... colocar NOMBRE y avisar al docente...
+### NOMBRE: Marco Dugarte.-
 
 ## Descripción
 Proyecto para la Evaluación Sumativa 4.2 de la asignatura Desarrollo de Software para Hardware (DCSH01).
